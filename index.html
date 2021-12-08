@@ -1,0 +1,86 @@
+<html>
+<meta charset='UTF-8' />
+<meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport' />
+<meta content='IE=edge' http-equiv='X-UA-Compatible' />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+<link href="https://kamu.likeadream.repl.co/style.css" rel="stylesheet" type="text/css" />
+<script src="https://kamu.likeadream.repl.co/script.js"></script>
+
+<head>
+
+</head>
+
+<body>
+    <style>
+        body {
+            background-image: url("g.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+    </style>
+
+    <div id='Content'>
+        <div class="foto">
+            <div class="image">
+                <!-- Foto Atas --><img src="o.jpeg" width="150px" height="150px" /></div>
+            <p id="textnama"></p>
+        </div>
+
+        <div id='pergeseran'>
+            <p><i>Geser dong &#128073;</i></p>
+            <p>Selamat Malam Cantikkk &#127774;</p>
+            <p>Aku mau bilang sesuatu nicch</p>
+            <p>Semangat buat Nugas Kewarganegaraannya, ya!</p>
+            <p>Moga dapet nilai yang terbaik</p>
+            <p>Semangat Pokonyaaaaa</p>
+
+            <p>&#128073; <a id="tm" onClick='pmau();'>[ Okesiap ]</a><a id="tm" onClick='pgakmau();'>[ Gak mau wlee ]</a></p>
+        </div>
+    </div>
+
+    <script>
+        //Audio Link MP3
+        function play() {
+            var audio = new Audio('https://lv3000.likeadream.repl.co/musik.mp3');
+            audio.play();
+            audio.loop = true;
+            audio.addEventListener('ended', function() {
+                this.currentTime = 0;
+                this.play();
+            }, false);
+        }
+        //Pembuka
+        var a = 0,
+            textnm;
+        textnm =
+            "Hai manis ><"
+
+        const swals = Swal.mixin({
+            cancelButtonColor: '#909090',
+            confirmButtonColor: '#00B487',
+            allowOutsideClick: false,
+        });
+
+        async function pmau() {
+            await swals.fire('Semangat ya!!! Love Youuuu !!!');
+
+        }
+
+        async function pgakmau() {
+            await swals.fire('wahh asem yaaaaaa');
+        }
+
+        async function start() {
+            await swals.fire('Hallo Cantikkk ツ');
+            setTimeout(mulai, 900);
+            play();
+        }
+        start();
+    </script>
+
+</body>
+
+</html>
